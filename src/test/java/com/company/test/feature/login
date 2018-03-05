@@ -1,0 +1,9 @@
+Feature: LoginFeature
+
+    Scenario: Login with correct username and password
+        Given I navigate to the login page
+        And I enter the following details for login
+            | username | password      |
+            | admin    | adminPassword |
+        And I click login button
+        The I should see the user form page
